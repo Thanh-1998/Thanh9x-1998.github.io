@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header id="header" class="nav-bar flex">
+        <div class="header-left flex">
+
+            <span class="arrow-menu"></span>
+
+            <a href="" class="header-logo flex">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
+
+            <nav class="header-menu flex">
+                <ul class="list-menu flex">
+                    <li class="item-menu">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <a href="javascript:0">Lịch hẹn</a>
+                    </li>
+                    <li class="item-menu">
+                        <i class="fa-solid fa-calculator"></i>
+                        <a href="javascript:0">Thu ngân</a>
+                    </li>
+                    <li class="item-menu">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="javascript:0">Khách hàng</a>
+                    </li>
+                    <li class="item-menu">
+                        <i class="fa-solid fa-arrow-up-right-dots"></i>
+                        <a href="javascript:0">Báo giá</a>
+                        <span class="icon-submenu">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+
+                        <div class="dropdown">
+                            <ul class="sub_menu">
+                                <li class="sub_menu-items">
+                                    <span>DOANH THU</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Danh sách hóa đơn</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Doanh thu theo ngày</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Theo chi nhánh</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Theo khách hàng</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Theo nhân viên</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Theo thu ngân</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub_menu-items">
+                                    <span>KHÁCH HÀNG</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Thống kê khách hàng</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Thống kê đặt lịch</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Khách hàng nợ</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Khách hàng dùng thẻ</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Lịch sử dùng thẻ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub_menu-items">
+                                    <span>NHÂN VIÊN</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng nhân viên</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng theo thực thu</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng giới thiệu</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Khách hàng dùng thẻ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub_menu-items">
+                                    <span>TỒN KHO & THU/CHI</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng nhân viên</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng theo thực thu</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng giới thiệu</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Khách hàng dùng thẻ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub_menu-items">
+                                    <span>TÀI CHÍNH</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng nhân viên</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item-menu">
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="javascript:0">Cài đặt</a>
+                        <span class="icon-submenu">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+
+                        <div class="dropdown">
+                            <ul class="sub_menu">
+                                <li class="sub_menu-items">
+                                    <span>THÔNG TIN CỬA HÀNG</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Danh sách hóa đơn</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Doanh thu theo ngày</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Theo chi nhánh</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Theo khách hàng</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Theo nhân viên</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Theo thu ngân</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub_menu-items">
+                                    <span>SẢN PHẨM & DỊCH VỤ</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Thống kê khách hàng</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Thống kê đặt lịch</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Khách hàng nợ</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Khách hàng dùng thẻ</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Lịch sử dùng thẻ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub_menu-items">
+                                    <span>NHÂN VIÊN</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng nhân viên</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng theo thực thu</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng giới thiệu</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Khách hàng dùng thẻ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub_menu-items">
+                                    <span>TỒN KHO & THU/CHI</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng nhân viên</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng theo thực thu</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng giới thiệu</a>
+                                        </li>
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Khách hàng dùng thẻ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub_menu-items">
+                                    <span>TÀI CHÍNH</span>
+                                    <ul class="sub_menu-child">
+                                        <li class="menu-child_items">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <a href="#">Hoa hồng nhân viên</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="header-right">
+            <ul class="list-menu flex">
+                <li class="item-menu">
+                    <a href="">
+                        <i class="fa-solid fa-alarm-clock"></i>
+                    </a>
+                </li>
+                <li class="item-menu" title="Quà tặng">
+                    <a href="">
+                        <i class="fa-solid fa-gift"></i>
+                    </a>
+                </li>
+                <li class="item-menu header-right_items">
+                    <a href="javascript:0">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="header-right_text">Spa</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <div class="dropdown">
+                        <ul class="sub_menu">
+                            <li class="sub_menu-items">
+                                <h3 class="dropdown-heading">
+                                    <span>CHI NHÁNH LÀM VIỆC</span>
+                                    <a href="">CHỈNH SỬA</a>
+                                </h3>
+                                <ul class="manage_address">
+                                    <li class="manage_address-items">
+                                        <a href="">
+                                            <span class="name-branch">Spa</span>
+                                            <p class="name-address">Ba Đình, Hà Nội</p>
+                                        </a>
+                                        <div class="manage_address-check">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item-menu">
+                    <a href="">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                </li>
+
+                <li class="item-menu avatar-header header-right_items">
+                    <a href="javascript:0" >
+                       <img src="./assets/img/avt.png" alt="">
+                    </a>
+                    <i class="fa-solid fa-angle-down"></i>
+
+                    <div class="dropdown">
+                        <ul class="sub_menu">
+                            <li class="sub_menu-items">
+                                <h3 class="name-avt">thanh</h3>
+                                <ul class="manage-account">
+                                    <li>
+                                        <i class="fa-solid fa-user"></i>
+                                        <a href="">Tài khoản</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-upload"></i>
+                                        <a href="">Nâng cấp tài khoản</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                        <a href="">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </header> 
+
+    <div class="breadcrumb flex">
+        <div class="breadcrumb-left flex">
+            <h2 class="heading flex">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Lịch hẹn</span>
+            </h2>
+            
+            (<a href="" class="booking">Web đặt lịch online</a>)
+        </div>
+
+        <div class="breadcrumb-right flex">
+            <ul class="breadcrumb-tab flex">
+                <li>
+                    <a href="javascript:0">
+                        <i class="fa-solid fa-border-all"></i>
+                        Vị trí chỗ
+                    </a>
+                </li>
+
+                <li class="active"> 
+                    <a href="javascript:0">
+                        <i class="fa-solid fa-user-group"></i>
+                        Nhân viên
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:0">
+                        <i class="fa-solid fa-clock"></i>
+                        Thời gian
+                    </a>
+                </li>
+            </ul>
+
+            <div class="breadcrumb-right_items btn-booking btn">
+                <span>
+                    <i class="fa-solid fa-border-all"></i>
+                </span>
+                Sơ đồ chỗ
+            </div>
+
+            <div class="breadcrumb-right_items btn-booking btn">
+                <span>
+                    <i class="fa-solid fa-border-all"></i>
+                </span>
+                Lịch sử
+            </div>
+
+            <div class="choose-calendar btn ">
+                <span>
+                    <i class="fa-solid fa-border-all"></i>
+                </span>
+                <input type="text" class="pick-date" value="2022-08-09 - 2022-08-12">
+            </div>
+
+            <div class="breadcrumb-right_items btn-booking btn">
+                <span>
+                    <i class="fa-solid fa-border-all"></i>
+                </span>
+                Đặt lịch
+            </div>
+        </div>
+    </div>
+    <main id="main" class="page-calendar">
+        <div class="wrap">
+            <div class="page-calendar_left">
+                <div class="calendar_left-content" style="display: none;">
+                    <div class="left-content_staff">
+                        <div class="title-calendar">
+                            <div class="content_staff-heading">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Tất cả</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+
+                            <div class="box_select">
+                                <ul class="box_select-drop">
+                                    <li class="select-drop_checkbox">
+                                        <input type="checkbox" id="all-staff" class="drop_checkbox-item">
+                                        <label for="all-staff" class="drop_checkbox-text">chọn toàn bộ</label>
+                                    </li>
+                                    
+                                    <li class="line"></li>
+
+                                    <li class="select-drop_checkbox">
+                                        <input type="checkbox" id="staff-null" class="drop_checkbox-item">
+                                        <label for="staff-null" class="drop_checkbox-text">chưa chọn nhân viên</label>
+                                    </li>
+
+                                    <li class="select-drop_checkbox">
+                                        <input type="checkbox" id="staff-a" class="drop_checkbox-item">
+                                        <label for="staff-a" class="drop_checkbox-text">nhân viên a</label>
+                                    </li>
+
+                                    <li class="select-drop_checkbox">
+                                        <input type="checkbox" id="staff-b" class="drop_checkbox-item">
+                                        <label for="staff-b" class="drop_checkbox-text">nhân viên b</label>
+                                    </li>
+
+                                    <li class="select-drop_checkbox">
+                                        <input type="checkbox" id="staff-c" class="drop_checkbox-item">
+                                        <label for="staff-c" class="drop_checkbox-text">nhân viên c</label>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <div class="staff-items_avt">
+                                <img src="./assets/img/avt_1.jpg" alt="">
+                            </div>
+                            <span class="staff-name">
+                                chưa chọn nhân viên
+                            </span>
+                            <span class="pos-staff">Stylist</span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <div class="staff-items_avt">
+                                <img src="./assets/img/avt_1.jpg" alt="">
+                            </div>
+                            <span class="staff-name">
+                                nhân viên a
+                            </span>
+                            <span class="pos-staff">Stylist</span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <div class="staff-items_avt">
+                                <img src="./assets/img/avt_1.jpg" alt="">
+                            </div>
+                            <span class="staff-name">
+                                nhân viên b
+                            </span>
+                            <span class="pos-staff">thợ chính</span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <div class="staff-items_avt">
+                                <img src="./assets/img/avt_1.jpg" alt="">
+                            </div>
+                            <span class="staff-name">
+                                nhân viên c
+                            </span>
+                            <span class="pos-staff">Thợ phụ</span>
+                        </div>
+
+                    </div>
+
+                    <div class="right-content_staff">
+                        <div class="calendar_right-heading">
+                            <div class="day_heading-items title-calendar">
+                                <b>Hôm nay (09/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+                        </div>
+        
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calendar_left-content">
+                    <div class="left-content_staff">
+                        <div class="title-calendar">
+                            <div class="content_staff-heading">
+                                <span>Thời gian</span>
+                            </div>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                06:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                07:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                08:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                09:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                10:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                11:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                12:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                13:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                14:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                15:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                16:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                17:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                18:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                19:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                20:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                21:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                22:00
+                            </span>
+                        </div>
+
+                        <div class="content_staff-items">
+                            <span class="staff-name">
+                                23:00
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="right-content_staff">
+                        <div class="calendar_right-heading">
+                            <div class="day_heading-items title-calendar">
+                                <b>Hôm nay (09/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+            
+                            <div class="day_heading-items title-calendar">
+                                <b>Thứ 4 (10/08)</b>
+                            </div>
+                        </div>
+        
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="calendar_right-select">
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+        
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                            <div class="pick_day">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-calendar_right">
+                <div class="calendar_right-box">
+                    <div class="calendar_right-top flex">
+                        <div class="calendar_right-search">
+                            <input class="search-input form-control" placeholder="Tìm khách hàng hoặc mã đặt lịch">
+                            <button class="search-booking">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="calendar_right-sort">
+                            <div class="toggle-drop dropdown-sort">
+                                <span>Tất cả trạng thái</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar_right-content">
+                        <div class="info-booking">
+                            <a href="#">
+                                Hôm nay có <span class="appointment">0</span> lịch hẹn. Bấm để xem
+                            </a>
+                        </div>
+                        
+                        <div class="right-content_view">
+                            <p class="text-notification">Không có dữ liệu</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
