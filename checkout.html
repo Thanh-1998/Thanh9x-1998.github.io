@@ -26,19 +26,19 @@
 
             <nav class="header-menu flex">
                 <ul class="list-menu flex">
-                    <li class="item-menu">
+                    <li class="item-menu show-items">
                         <i class="fa-solid fa-calendar-days"></i>
                         <a href="javascript:0">Lịch hẹn</a>
                     </li>
-                    <li class="item-menu">
+                    <li class="item-menu show-items">
                         <i class="fa-solid fa-calculator"></i>
                         <a href="javascript:0">Thu ngân</a>
                     </li>
-                    <li class="item-menu">
+                    <li class="item-menu show-items">
                         <i class="fa-solid fa-user"></i>
                         <a href="javascript:0">Khách hàng</a>
                     </li>
-                    <li class="item-menu">
+                    <li class="item-menu show-items">
                         <i class="fa-solid fa-arrow-up-right-dots"></i>
                         <a href="javascript:0">Báo giá</a>
                         <span class="icon-submenu">
@@ -159,7 +159,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="item-menu">
+                    <li class="item-menu show-items">
                         <i class="fa-solid fa-gear"></i>
                         <a href="javascript:0">Cài đặt</a>
                         <span class="icon-submenu">
@@ -287,17 +287,17 @@
 
         <div class="header-right">
             <ul class="list-menu flex">
-                <li class="item-menu">
+                <li class="item-menu show-items">
                     <a href="">
                         <i class="fa-solid fa-alarm-clock"></i>
                     </a>
                 </li>
-                <li class="item-menu" title="Quà tặng">
+                <li class="item-menu show-items" title="Quà tặng">
                     <a href="">
                         <i class="fa-solid fa-gift"></i>
                     </a>
                 </li>
-                <li class="item-menu header-right_items">
+                <li class="item-menu show-items header-right_items">
                     <a href="javascript:0">
                         <i class="fa-solid fa-house"></i>
                         <span class="header-right_text">Spa</span>
@@ -326,13 +326,13 @@
                         </ul>
                     </div>
                 </li>
-                <li class="item-menu">
+                <li class="item-menu show-items">
                     <a href="">
                         <i class="fa-solid fa-bell"></i>
                     </a>
                 </li>
 
-                <li class="item-menu avatar-header header-right_items">
+                <li class="item-menu show-items avatar-header header-right_items">
                     <a href="javascript:0" >
                        <img src="./assets/img/avt.png" alt="">
                     </a>
@@ -406,14 +406,532 @@
         <div class="wrap flex">
             <div class="page_pos-left">
                 <div class="pos-left_panel">
-                    <div class="pos-left_heading">
-                        <div class="left_heading-order">
+                    <div class="pos-left_heading flex">
+                        <div class="left_heading-order flex">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Đơn hàng</span>
+                            <ul class="list-star flex">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
 
+                        <div class="right_heading-order flex">
+                            <span>Chờ thanh toán</span>
+            
+                            <div class="btn btn-checkout">
+                                Không có hóa đơn
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pos-left_content flex">
+                        <div class="left_content-product">
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="left_content-info">
+                            <div class="content-info_detail flex">
+                                <span class="info_detail-text">Đặt lịch từ:</span>
+                                <a href="" class="info_detail-data">20/08/2022</a>
+                                <span class="info_detail-text">Ngày hóa đơn:</span>
+                                <a href="" class="info_detail-data">20/08/2022</a>
+                                <span class="info_detail-text">Giờ vào/ra:</span>
+                                <a href="" class="info_detail-data">20:10/20:30</a>
+                                <span class="info_detail-text">N.viên thu ngân:</span>
+                                <a href="" class="info_detail-data">Admin</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pos-left_order custom-scroll">
+                        <table class="table left_order-table">
+                            <thead>
+                                <tr>
+                                    <th class="text-first">Sản phẩm & dịch vụ</th>
+                                    <th>Số lượng</th>
+                                    <th>Nhân viên</th>
+                                    <th>Thành tiền</th>
+                                    <th class="text-last"></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="item-info flex">
+                                            <a href="" class="item-info-img">
+                                                <img src="./assets/img/hair.png" alt="">
+                                            </a>
+                                            <div class="item-info-scope">
+                                                <p class="item-name">Uốn tóc</p>
+                                                <p class="item-price">Giá: <span class="info-total-cash use_price">600.000 đ</span></p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="input-group flex">
+                                            <button class="btn-qty btn-minus">-</button>
+                                            <input value="1" type="text" class="quantity">
+                                            <button class="btn-qty btn-plus">+</button>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="item-info-staff">
+                                            <i class="fa-solid fa-question"></i>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="item-info-total">
+                                            <b class="info-total-cash">600.000 đ</b>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="item-info-edit">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </td>                               
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="item-info flex">
+                                            <a href="" class="item-info-img">
+                                                <img src="./assets/img/hair.png" alt="">
+                                            </a>
+                                            <div class="item-info-scope">
+                                                <p class="item-name">Uốn tóc</p>
+                                                <p class="item-price">Giá: <span class="info-total-cash use_price">600.000 đ</span></p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="input-group flex">
+                                            <button class="btn-qty btn-minus">-</button>
+                                            <input value="1" type="text" class="quantity">
+                                            <button class="btn-qty btn-plus">+</button>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="item-info-staff">
+                                            <i class="fa-solid fa-question"></i>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="item-info-total">
+                                            <b class="info-total-cash">600.000 đ</b>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="item-info-edit">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </td>                               
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="item-info flex">
+                                            <a href="" class="item-info-img">
+                                                <img src="./assets/img/hair.png" alt="">
+                                            </a>
+                                            <div class="item-info-scope">
+                                                <p class="item-name">Uốn tóc</p>
+                                                <p class="item-price">Giá: <span class="info-total-cash use_price">600.000 đ</span></p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="input-group flex">
+                                            <button class="btn-qty btn-minus">-</button>
+                                            <input value="1" type="text" class="quantity">
+                                            <button class="btn-qty btn-plus">+</button>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="item-info-staff">
+                                            <i class="fa-solid fa-question"></i>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="item-info-total">
+                                            <b class="info-total-cash">600.000 đ</b>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="item-info-edit">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </td>                               
+                                </tr>
+
+                                <tr>
+                                    <td style="display: none;">Đơn hàng chưa có sản phẩm & dịch vụ nào.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="pos-left_checkout">
+                        <div class="left_checkout-list flex">
+                            <p>Thành tiền</p>
+                            <b class="info-total-cash">600.000 đ</b>
+                            <p class="text-discount">Giảm giá <span class="desc-cash">(Thêm giảm giá)</span></p>
+                            <b class="total-discount">0 đ</b>
+                            <p class="text-voucher">Thẻ giảm giá/voucher <span class="desc-cash">(Chọn thẻ)</span> </p>
+                            <b class="total-voucher">0 đ</b>
+                        </div>
+                    </div>
+
+                    <div class="pos-left_bottom">
+                        <div class="left_bottom-checkout flex">
+                            <span>Tổng tiền</span>
+                            <span class="bottom-checkout_cash">600.000 đ</span>
+                        </div>
+                        <div class="left_bottom-action flex">
+                            <div class="bottom-action_left flex">
+                                <div class="btn-booking btn">
+                                    <span>
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </span>
+                                    Hủy
+                                </div>
+
+                                <div class="btn-booking btn">
+                                    <span>
+                                        <i class="fa-solid fa-user-group"></i>
+                                    </span>
+                                    Hoa hồng & doanh thu
+                                </div>
+                            </div>
+                            <div class="bottom-action_right flex">
+                                <div class="btn-booking btn">
+                                    <span>
+                                        <i class="fa-solid fa-print"></i>
+                                    </span>
+                                    In hóa đơn
+                                </div>
+
+                                <div class="btn-booking btn">
+                                    <span>
+                                        <i class="fa-solid fa-money-bill"></i>
+                                    </span>
+                                    Thanh toán
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="page_pos-right"></div>
+            <div class="page_pos-right">
+                <div class="pos-right_header">
+                    <div class="right_panel-search">
+                        <span class="code-qr">
+                            <i class="fa-solid fa-barcode"></i>
+                        </span>
+                        <input class="search-input form-control" placeholder="Quét mã hoặc Tìm kiếm theo tên hoặc mã sản phẩm & dịch vụ">
+                    </div>
+                </div>
+
+                <div class="pos-right_tab flex">
+                    <ul class="right_tab-service flex">
+                        <li>
+                            <i class="fa-solid fa-car"></i>
+                            <span>Dịch vụ</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-tags"></i>
+                            <span>Sản phẩm</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-address-card"></i>
+                            <span>Thẻ dịch vụ</span>
+                        </li>
+                    </ul>
+
+                    <div class="right_tab-sort flex">
+                        <div class="tab-sort_first">
+                            <i class="fa-solid fa-arrow-up-a-z"></i>
+                        </div>
+                        <div class="tab-sort_second">
+                            <div class="sort_second-title">
+                                <span>Sắp xếp</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_content-service">
+                    <div class="content-service_title flex">
+                        <div class="service_title-items active">
+                            <span>Tất cả</span>
+                        </div>
+
+                        <div class="service_title-items">
+                            <span>Nhóm dịch vụ chăm sóc cơ bản</span>
+                        </div>
+
+                        <div class="service_title-items">
+                            <span>Nhóm dịch vụ chăm sóc nâng cao</span>
+                        </div>
+                    </div>
+
+                    <div class="content-service_list flex custom-scroll">
+                        <div class="service_list-product active">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+
+                                <span class="amount-product">1</span>
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product active">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product active">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product active">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product active">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service_list-product">
+                            <div class="list-product_img">
+                                <img src="./assets/img/avt-pro.jpg" alt="">
+                            </div>
+
+                            <div class="list-product_info">
+                                <h3 class="product_info-name">
+                                    tẩy da chết toàn thân
+                                </h3>
+
+                                <div class="product_info-bottom flex">
+                                    <p class="info-sku">DV598893</p>
+                                    <b class="info-total-cash">500.000 đ</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
