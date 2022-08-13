@@ -740,6 +740,7 @@ img {
 }
 .left-content_staff {
     width: 140px;
+    z-index: 1;
 }
 .title-calendar {
     width: 140px;
@@ -814,6 +815,14 @@ img {
     border: 1px solid #d3dae7;
     box-sizing: border-box;
     border-top: 0;
+}
+.content_staff-items {
+    z-index: 0;
+}
+.calendar_right-heading,
+.left-content_staff,
+.title-calendar {
+    position: relative;
 }
 .calendar_right-select,
 .calendar_right-heading,
