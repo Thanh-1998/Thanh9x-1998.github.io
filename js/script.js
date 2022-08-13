@@ -6,6 +6,10 @@ const navMenu = document.querySelector('.header-menu');
 const overlay = document.querySelector('.overlay');
 const permissionItems = document.querySelectorAll('.permission-items');
 const seePres = document.querySelectorAll('.see-pre');
+const scrollCalendar = document.querySelector('.calendar_left-content');
+const scrollHeading = document.querySelector('.calendar_right-heading');
+const scrollHeadingLeft = document.querySelector('.title-calendar');
+const scrollCollLeft = document.querySelector('.left-content_staff');
 
 
 for (let item of menuItems) {
@@ -22,15 +26,13 @@ for (let item of menuItems) {
 
 for (let itemPre of seePres) {
 	itemPre.addEventListener('click', () => {
-		seePres.forEach((seePre) => {
-			itemPre.parentNode.parentNode.classList.toggle("active");
-		});
+		itemPre.parentNode.parentNode.classList.toggle("active");
 	});
 }
 
-for (let item of menuItems) {
+for (let item of permissionItems) {
 	item.addEventListener('click', () => {
-		menuItems.forEach((menuItem) => {
+		permissionItems.forEach((menuItem) => {
 			if (menuItem.classList.contains("active") && menuItem != item) {
 				menuItem.classList.remove("active");
 			}
@@ -62,5 +64,17 @@ overlay.addEventListener('click', () => {
 	body.classList.remove('no-scroll');
 	overlay.classList.remove('active');
 	checkMenu = false;
-})
+});
+
+
+
+
+scrollCalendar.addEventListener('scroll', function(e) { 
+	let scroll_y = this.scrollLeft; 
+	let scroll_x = this.scrollTop; 
+
+	scrollHeading.style.top = scroll_x + 'px';
+	scrollHeadingLeft.style.top = scroll_x + 'px';
+	scrollCollLeft.style.left =  scroll_y + 'px';
+}); 
 
