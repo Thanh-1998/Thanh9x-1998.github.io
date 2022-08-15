@@ -993,11 +993,62 @@ input[type="checkbox"].drop_checkbox-item:checked + label::before {
 .box_select {
     display: none;
 }
-
-
-
-
-
+@media (max-width: 1500px) {
+    .calendar_left-content {
+        width: 1000px;
+    }
+}
+@media (max-width: 1400px) {
+    .calendar_left-content {
+        width: calc(100vw - 38vw);
+    }
+}
+@media (max-width: 1100px) {
+    .page-calendar .wrap {
+        top: 145px;
+    }
+    .calendar .breadcrumb-right {
+        margin-top: 10px;
+    }
+    .calendar_left-content {
+        width: calc(100vw - 40vw);
+    }
+}
+@media (max-width: 992px) {
+    .calendar_left-content {
+        width: calc(100vw - 38vw);
+    }
+    .calendar_left-content {
+        width: calc(100vw - 20px);
+    }
+    .page-calendar_right {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 870px) {
+    .calendar .breadcrumb-tab,
+    .calendar .breadcrumb-right {
+        width: 100%;
+    }   
+    .calendar .breadcrumb-tab>li {
+        width: calc(100% / 3);
+        padding: 10px 0;
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    .page-calendar .wrap {
+        top: 200px;
+    }
+    #main {
+        border: 0;
+    }
+    .calendar .breadcrumb-right .btn {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
 /* ------------------- page pos -------------------- */
 
 .ask-pos {
